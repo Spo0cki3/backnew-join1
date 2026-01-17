@@ -2,60 +2,60 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Connexion au serveur</title>
+    <title>Connexion BackNew RP</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Anti cache -->
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
 
     <style>
         body {
             background: #0f172a;
-            color: #ffffff;
+            color: white;
             font-family: Arial, sans-serif;
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             height: 100vh;
             margin: 0;
         }
         .box {
             text-align: center;
+            background: #020617;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 40px rgba(0,0,0,0.5);
         }
-        .loader {
-            margin-top: 20px;
-            border: 4px solid #1e293b;
-            border-top: 4px solid #38bdf8;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin-left: auto;
-            margin-right: auto;
+        h1 {
+            margin-bottom: 10px;
         }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        p {
+            opacity: 0.8;
+        }
+        a.button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 30px;
+            background: #38bdf8;
+            color: #020617;
+            font-weight: bold;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        a.button:hover {
+            background: #0ea5e9;
         }
     </style>
-
-    <script>
-        // délai léger pour éviter certains bloqueurs navigateur
-        setTimeout(function () {
-            window.location.href = "fivem://connect/188.165.33.179:30141";
-        }, 800);
-    </script>
 </head>
 <body>
     <div class="box">
-        <h1>Connexion au serveur</h1>
-        <p>FiveM va s’ouvrir automatiquement…</p>
-        <div class="loader"></div>
+        <h1>BackNew RP</h1>
+        <p>Clique sur le bouton pour te connecter au serveur</p>
 
-        <p style="margin-top:20px; font-size:14px; opacity:0.7;">
-            Si rien ne se passe, assure-toi que FiveM est installé.
+        <a class="button" href="fivem://connect/188.165.33.179:30141">
+            🎮 Se connecter au serveur
+        </a>
+
+        <p style="margin-top:20px; font-size:13px;">
+            FiveM doit être installé sur ton PC.
         </p>
     </div>
 </body>
